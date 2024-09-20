@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    background-color: #ffffff; /* Change background to white */
+    font-family: 'Helvetica Neue Medium Extended', sans-serif; /* Changed font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the Leaderboard */
+.leaderboard-container {
+    display: flex;
+    flex-direction: column;  /* Stack the content vertically */
+    justify-content: center;  /* Horizontally centers the leaderboard */
+    align-items: center;      /* Vertically centers the leaderboard */
+    min-height: 100vh;        /* Makes the container fill the entire viewport */
+    margin: 0 auto;           /* Ensures container is centered */
+}
+
+/* Leaderboard Heading */
+.leaderboard-heading {
+    background-color: #ffffff; /* Background stays white */
+    color: #000000;            /* Text color black */
+    padding: 20px;
+    font-size: 36px; /* Adjust for size */
+    text-align: center;
+    border-top: 10px solid #ed1c24; /* Red line at the top */
+    border-bottom: 10px solid #ed1c24; /* Red line at the bottom */
+    font-family: 'Helvetica Neue Medium Extended', sans-serif; /* Font applied to heading */
+    margin-bottom: 40px;
+}
+
+/* Top Contributors Section */
+.top-contributors h2 {
+    background-color: #ed1c24;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.top-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contributor {
+    background-color: #000000; /* Black box for contributors */
+    color: #ffffff;            /* White text inside */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.rank {
+    background-color: #ed1c24;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.score {
+    font-size: 18px;
+    color: #ed1c24;
+    font-weight: bold;
+}
+
+/* All Contributors Section */
+.all-contributors h2 {
+    background-color: #ed1c24;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contributor-table {
+    width: 80%; /* Adjust to fit the page better */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.contributor-table th, .contributor-table td {
+    border: 1px solid #ed1c24;
+    padding: 15px; /* Added padding for better spacing between cells */
+    text-align: center;
+    background-color: #000000; /* Black cells */
+    color: white; /* White text */
+}
+
+.contributor-table th {
+    background-color: #ed1c24;
+    color: white;
+    font-size: 18px;
+}
+
+.contributor-table td {
+    background-color: #333333; /* Dark grey cells for data */
+    color: white;
+    font-size: 16px;
+    border-spacing: 0 10px; /* Extra spacing between cells */
+}
+
+/* Ensuring everything is properly spaced */
+.top-contributors, .all-contributors {
+    width: 100%; /* Ensures the sections fill the page width */
+    max-width: 1200px; /* Restrict maximum width */
+    margin: 0 auto; /* Center the sections */
+}
+
+/* Adjusting spacing between rows in the table */
+.contributor-table tr {
+    margin-bottom: 15px; /* Add space between rows */
+}
+
+.contributor-table th, .contributor-table td {
+    border-spacing: 0px 15px;
+}
